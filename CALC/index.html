@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainDiv{
+            border-radius: 30px;
+            width: 250px;
+            height: 370px;
+            border: 2px solid black;
+            background-color: aqua;
+
+        }
+        .input1 input{
+            margin-top: 30px;
+            width: 200px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        button{
+            height: 40px;
+            width: 50px;
+            border-radius: 50px;
+            margin: 2px;
+            background-color: rgb(72, 68, 68);
+            border:solid rgb(72, 68, 68) ;
+            color: white;
+            font-size: larger;
+            
+        }
+        .clr{
+            height: 40px;
+            width: 90px;
+            border-radius: 10px;
+            font-size: small;
+
+        }
+        .del{
+            height: 40px;
+            width: 90px;
+            border-radius: 10px;
+            font-size: small;
+
+        }
+    </style>
+</head>
+<body>
+<!-- <p id="abc"></p>
+
+<button onclick="def()">Click me</button> -->
+
+<!-- <p >
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe earum ad laboriosam laudantium nostrum repellendus nemo magni asperiores odio quae? Aliquam, commodi! Voluptate et consectetur, ea quidem eligendi omnis placeat? 
+    <a id="anc" onclick="def()" href="#">Read More</a>
+</p>
+<p id="ttt"></p> -->
+
+<center>
+<h1>CALCULATOR</h1><br>
+
+<div class="mainDiv">
+    <div class="input1">
+         <input readonly type="text" id="inp">
+     </div>
+    <div> <br>
+        <button class="clr" onclick="clr()">CLEAR ALL</button>
+        <button class="del" onclick="del()">CLEAR</button>
+    </div> <br>
+    <div>
+        <button style="background-color: white; color: black; border: solid white;" onclick="abc(9)">9</button>
+        <button style="background-color: white; color: black; border: solid white;" onclick="abc(8)" >8</button>
+        <button style="background-color: white; color: black; border: solid white;" onclick="abc(7)">7</button>
+        <button  style="background-color: yellow; border: solid yellow;"  onclick="abc('+')" >+</button>
+
+    </div>
+    <div>
+        <button  onclick="abc(6)">6</button>
+        <button  onclick="abc(5)">5</button>
+        <button  onclick="abc(4)">4</button>
+        <button style="background-color: yellow; border: solid yellow;"  onclick="abc('-')">-</button>
+
+    </div>
+    <div>
+        <button  onclick="abc(3)">3</button>
+        <button  onclick="abc(2)">2</button>
+        <button  onclick="abc(1)">1</button>
+        <button style="background-color: yellow; border: solid yellow;"  onclick="abc('/')">/</button>
+
+    </div>
+    <div>
+        <button  onclick="abc(0)">0</button>
+        <button  onclick="abc('x')">x</button>
+        <button   onclick="eq()">=</button>
+        <button style="background-color: yellow; border: solid yellow;"  onclick="abc('%')">%</button>
+
+    </div>
+</div>
+</center>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
